@@ -1,0 +1,93 @@
+my_app_hotel_homepage:
+    path:     /
+    defaults: { _controller: MyAppHotelBundle:Default:index }
+
+
+esprit_hotel_add:
+    path:     /addHotel
+    defaults: { _controller: MyAppHotelBundle:Hotel:addHotel }
+
+
+esprit_hotel_diplay:
+    path:     /displayHotel
+    defaults: { _controller: MyAppHotelBundle:Hotel:DisplayHotel }
+
+
+esprit_hotel_diplayAll:
+    path:     /ShowAllHotel
+    defaults: { _controller: MyAppHotelBundle:Hotel:ShowAllHotel }
+
+
+Delete_hotel:
+    path:     /DeleteHotel{id}
+    defaults: { _controller: MyAppHotelBundle:Hotel:DeleteHotel }
+
+
+Update_hotel:
+    path:     /UpdateHotel{id}
+    defaults: { _controller: MyAppHotelBundle:Hotel:UpdateHotel }
+
+Recherche_hotel:
+    path:     /rechercheHotel
+    defaults: { _controller: MyAppHotelBundle:Hotel:searchByName }
+
+ShowAll_chambre:
+    path:     /showAllChambre
+    defaults: { _controller: MyAppHotelBundle:chambre:DisplayAllChambre}
+
+add_chambre:
+    path:     /addChambre
+    defaults: { _controller: MyAppHotelBundle:chambre:addChambre}
+
+update_chambre:
+    path:     /updateChambre{id}
+    defaults: { _controller: MyAppHotelBundle:chambre:updateChambre}
+
+
+Delete_Chambre:
+    path:     /DeleteChambre{id}
+    defaults: { _controller: MyAppHotelBundle:chambre:DeleteChambre }
+
+
+Recherche_chambre:
+    path:     /rechercheChambre
+    defaults: { _controller: MyAppHotelBundle:chambre:rechercheChambre }
+
+Show_chambre:
+    path:     /showChambre
+    defaults: { _controller: MyAppHotelBundle:chambre:DisplayChambre}
+
+
+ShowAll_reservationHotel:
+    path:     /showAllReservationHotel
+    defaults: { _controller: MyAppHotelBundle:ReservationHotel:ShowAllResvHotel}
+
+add_reservationHotel:
+    path:     /addReservationHotel
+    defaults: { _controller: MyAppHotelBundle:ReservationHotel:addResvHotel}
+
+update_reservationHotel:
+    path:     /updateReservationHotel{id}
+    defaults: { _controller: MyAppHotelBundle:ReservationHotel:updateResvHotel}
+
+
+Delete_reservationHotel:
+    path:     /DeleteReservationHotel{id}
+    defaults: { _controller: MyAppHotelBundle:ReservationHotel:DeleteReservationHotel}
+
+
+Recherche_reservationHotel:
+    path:     /rechercheReservationHotel
+    defaults: { _controller: MyAppHotelBundle:ReservationHotel:rechercheReservationHotel }
+
+Show_ReservationHotel:
+    path:     /showReservationHotel
+    defaults: { _controller: MyAppHotelBundle:ReservationHotel:showResvHotel}
+
+list_hotel:
+     path:     /listHotel
+     defaults: { _controller: MyAppHotelBundle:Hotel:List}
+
+list_hotel2:
+     path:     /listHotel2
+     defaults: { _controller: MyAppHotelBundle:Hotel:searchByName}

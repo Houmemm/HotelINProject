@@ -1,0 +1,46 @@
+{% extends "@MyAppUser/layout.html.twig" %}
+{% block video  %}
+{% block content %}
+
+<h1> la liste de tous les reservations</h1>
+
+
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th> client </th>
+        <th> hotel </th>
+        <th>date de reservation</th>
+        <th>dateDebut </th>
+        <th>dateFin  </th>
+        <th>supprimer</th>
+        <th>Modifier</th>
+
+    </tr>
+    {% for m in ms %}
+        <tr>
+            <td> {{ m.idResHotel }}</td>
+            <td> {{ m.idClient }}</td>
+            <td> {{ m.idChambre }}</td>
+            <td> {{ m.date | date('d/m/y') }}</td>
+            <td> {{ m.dateDebut | date('d/m/y')}}</td>
+            <td> {{ m.dateFin | date('d/m/y') }}</td>
+            <td>
+                <a href="{{ path('Delete_reservationHotel',{'id': m.idResHotel })}}" onclick="return confirm('Etes vous sur de vouloir supprimer cette reservation   ?')">
+                    supprimer
+                </a>
+
+            </td>
+            <td>
+                <a href="{{ path('update_reservationHotel',{'id': m.idResHotel })}}">
+                    modifier
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+
+{% endblock content %}
+{% endblock video %}

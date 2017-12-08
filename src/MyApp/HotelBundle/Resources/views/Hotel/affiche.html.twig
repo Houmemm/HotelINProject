@@ -1,0 +1,41 @@
+{% extends "@MyAppUser/layout.html.twig" %}
+{% block video  %}
+    {% block content %}
+
+        <h1> la liste de tous les hotels</h1>
+
+        <form method="GET">
+            {# total items count #}
+            <div class="count">
+                {{ pagination.getTotalItemCount }} hotel trouvé
+            </div>
+            <table>
+                <tr>
+                    {# sorting of properties based on query components #}
+                    <th>{{ knp_pagination_sortable(pagination, 'Id', 'a.id') }}</th>
+                    <th{% if pagination.isSorted('a.Title') %} class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Title', 'a.title') }}</th>
+                </tr>
+                {# table body #}
+                {% for m in pagination %}
+                    <tr {% if loop.index is odd %}class="color"{% endif %}>
+                        <form>
+                            <fieldset style="width:360px;">
+                                <legend>
+                                    {{ m.nom }}
+                                </legend>
+                                ID : {{ m.idHotel }} <br>
+                                Ville : {{ m.ville }} <br>
+                                Etoile : {{ m.etoile }}<br>
+
+                            </fieldset>
+                        </form>
+                    </tr>
+                {% endfor %}
+            </table>
+            {# display navigation #}
+            <div class="navigation">
+                {{ knp_pagination_render(pagination) }}
+            </div>
+        </form>
+    {% endblock content %}
+{% endblock video %}

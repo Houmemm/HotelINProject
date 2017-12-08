@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {% for role in app.user.roles%}
+                    {% if role =="ROLE_ADMIN"%}<a href="{{path('admin')}}">Espace admin</a>
+                    {% elseif role =="ROLE_anotheruser"%}<a href="{{path('user')}}">Espace un autre utilistauer</a>
+                    {% elseif role =="ROLE_user"%}<a href="{{path('showuser')}}">Espace user</a>
+
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        {% if app.request.hasPreviousSession %}
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="flash-{{ type }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        <div>
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,946 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Traveler - Index 1</title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="{{asset('bundles/framework/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('bundles/framework/css/font-awesome.css')}}">
+    <link rel="stylesheet" href="{{asset('bundles/framework/css/icomoon.css')}}">
+    <link rel="stylesheet" href="{{asset('bundles/framework/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('bundles/framework/css/mystyles.css')}}">
+    <script src="{{asset('bundles/framework/js/modernizr.js')}}"></script>
+
+
+</head>
+
+<body>
+
+<!-- FACEBOOK WIDGET -->
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- /FACEBOOK WIDGET -->
+<div class="global-wrap">
+    <header id="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="logo"  href="{{asset('http://localhost:8083/HolidaysIN-le-mien/web/app_dev.php/')}}">
+                            <img src="{{asset('bundles/framework/images/logo-invert.png')}}" alt="Image Alternative text" title="Image Title" />
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-md-offset-2">
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-user-area clearfix">
+                            <ul class="top-user-area-list list list-horizontal list-border">
+                                <li><a href="/HolidaysIN-le-mien/web/app_dev.php/login">connexion </a>  </li>
+                                <li><a href="/HolidaysIN-le-mien/web/app_dev.php/login">S'inscrire</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav">
+                <ul class="slimmenu" id="slimmenu">
+                    <li class="active"><a href="{{asset('bundles/framework/index.html')}}">Home</a>
+                        <ul>
+                            <li><a href="{{asset('bundles/framework/index.html')}}">Default</a>
+                            </li>
+                            <li class="active"><a  href="{{asset('bundles/framework/index-1.html')}}">Layout 1</a>
+                            </li>
+                            <li><a href="{{asset('bundles/framework/index-2.html')}}">Layout 2</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/index-3.html')}}">Layout 3</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/index-4.html')}}">Layout 4</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/index-5.html')}}">Layout 5</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/index-6.html')}}">Layout 6</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/index-7.html')}}">Layout 7</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a  href="{{asset('bundles/framework/success-payment.html')}}">Pages</a>
+                        <ul>
+                            <li><a  href="{{asset('bundles/framework/success-payment.html')}}">Success Payment</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/user-profile.html')}}">User Profile</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/user-profile.html')}}">Overview</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/user-profile-settings.html')}}">Settings</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/user-profile-photos.html')}}">Photos</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/user-profile-booking-history.html')}}">Booking History</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/user-profile-cards.html')}}">Cards</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/user-profile-wishlist.html')}}">Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/blog.html')}}">Blog</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/blog.html')}}">Sidebar Right</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/blog-sidebar-left.html')}}">Sidebar Left</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/blog-full-width.html')}}">Full Width</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/blog-post.html')}}">Post</a>
+                                        <ul>
+                                            <li><a  href="{{asset('bundles/framework/blog-post.html')}}">Sidebar Right</a>
+                                            </li>
+                                            <li><a  href="{{asset('bundles/framework/blog-post-sidebar-left.html')}}">Sidebar Left</a>
+                                            </li>
+                                            <li><a  href="{{asset('bundles/framework/blog-post-full-width.html')}}">Full Width</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/404.html')}}">404 page</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/contact-us.html')}}">Contact Us</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/about.html')}}">About</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/login-register.html')}}">Login/Register</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/login-register.html')}}">Full Page</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/login-register-normal.html')}}">Normal</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/loading.html')}}">Loading</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/comming-soon.html')}}">Comming Soon</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/gallery.html')}}">Gallery</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/gallery.html')}}">4 Columns</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/gallery-3-col.html')}}">3 columns</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/gallery-2-col.html')}}">2 columns</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/page-full-width.html')}}">Full Width</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/page-sidebar-right.html')}}">Sidebar Right</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/page-sidebar-left.html')}}">Sidebar Left</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a  href="{{asset('bundles/framework/feature-typography.html')}}">Features</a>
+                        <ul>
+                            <li><a  href="{{asset('bundles/framework/feature-typography.html')}}">Typography</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-icons.html')}}">Icons</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-forms.html')}}">Forms</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-icon-effects.html')}}">Icon Effects</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-elements.html')}}">Elements</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-grid.html')}}">Grid</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-hovers.html')}}">Hover effects</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-lightbox.html')}}">Lightbox</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/feature-media.html')}}">Media</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a  href="{{path('esprit_hotel_diplayAll')}}">Hotels</a>
+                        <ul>
+                            <li><a  href="{{path('esprit_hotel_add')}}"> Hotel </a>
+                                <ul>
+                                    <li><a  href="{{path('list_hotel')}}">rechercher</a>
+                                    </li>
+                                    <li><a  href="{{path('esprit_hotel_add')}}">ajouter</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a   href="{{path('ShowAll_chambre')}}"> chambre</a>
+                                <ul>
+                                    <li><a  href="{{path('add_chambre')}}">ajouter</a>
+                                    </li>
+                                    <li><a  href="{{path('ShowAll_chambre')}}">Afficher</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a   href="{{path('ShowAll_reservationHotel')}}">reservation</a>
+                                <ul>
+                                    <li><a   href="{{path('esprit_hotel_diplay')}}">liste des hotels</a>
+                                    </li>
+                                    <li><a   href="{{path('add_reservationHotel')}}">resrever </a>
+                                    </li>
+                                    <li><a   href="{{path('ShowAll_reservationHotel')}}">afficher les reservations</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a  href="{{asset('bundles/framework/flights.html')}}">Flights</a>
+                        <ul>
+                            <li><a  href="{{asset('bundles/framework/flight-payment.html')}}">Payment</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/flight-payment.html')}}">Registered</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/flight-payment-registered-card.html')}}">Existed Cards</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/flight-payment-unregistered.html')}}">Unregistered</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/flight-search.html')}}">Search</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/flight-search.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/flight-search-2.html')}}">Layout 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/flights.html')}}">List</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/flights.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/flights-search-results-2.html')}}">Layout 2</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/flights-search-results-3.html')}}">Layout 3</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/flights-search-results-4.html')}}">Layout 4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a  href="{{asset('bundles/framework/rentals.html')}}">Rentals</a>
+                        <ul>
+                            <li><a  href="{{asset('bundles/framework/rentals-details.html')}}">Details</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/rentals-details.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rentals-details-2.html')}}">Layout 2</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rentals-details-3.html')}}">Layout 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/rental-payment.html')}}">Payment</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/rental-payment.html')}}">Registered</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rental-payment-registered-card.html')}}">Existed Cards</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rental-payment-unregistered.html')}}">Unregistered</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/rentals-search.html')}}">Search</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/rentals-search.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rentals-search-2.html')}}">Layout 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/rentals.html')}}">Results</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/rentals.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rentals-search-results-2.html')}}">Layout 2</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rentals-search-results-3.html')}}">Layout 3</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rentals-search-results-4.html')}}">Layout 4</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/rentals-search-results-5.html')}}">Layout 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a  href="{{asset('bundles/framework/cars.html')}}">Cars</a>
+                        <ul>
+                            <li><a  href="{{asset('bundles/framework/car-details.html')}}">Details</a>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/car-payment.html')}}">Payment</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/car-payment.html')}}">Registered</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/car-payment-registered-card.html')}}">Existed Cards</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/car-payment-unregistered.html')}}">Unregistered</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/car-search.html')}}">Search</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/car-search.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/car-search-2.html')}}">Layout 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a  href="{{asset('bundles/framework/cars.html')}}"> Results</a>
+                                <ul>
+                                    <li><a  href="{{asset('bundles/framework/cars.html')}}"> Layout 1</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/cars-results-2.html')}}">Layout 2</a>
+                                    </li>
+                                    <li><a  href="{{asset('bundles/framework/cars-results-3.html')}}"> Layout 3</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/cars-results-4.html')}}">Layout 4</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/cars-results-5.html')}}"> Layout 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a  href="{{asset('bundles/framework/activities.html')}}"> Activities</a>
+                        <ul>
+                            <li><a href="{{asset('bundles/framework/activitiy-details.html')}}">Details</a>
+                                <ul>
+                                    <li><a href="{{asset('bundles/framework/activitiy-details.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activitiy-details-2.html')}}">Layout 2</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activitiy-details-3.html')}}">Layout 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="{{asset('bundles/framework/activity-search.html')}}">Search</a>
+                                <ul>
+                                    <li><a href="{{asset('bundles/framework/activity-search.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activity-search-2.html')}}">Layout 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="{{asset('bundles/framework/activitiy-payment.html')}}">Payment</a>
+                                <ul>
+                                    <li><a href="{{asset('bundles/framework/activitiy-payment.html')}}">Registered</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activity-payment-registered-card.html')}}">Existed Cards</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activitiy-payment-unregistered.html')}}">Unregistered</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="{{asset('bundles/framework/activities.html')}}">Results</a>
+                                <ul>
+                                    <li><a href="{{asset('bundles/framework/activities.html')}}">Layout 1</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activities-search-results-2.html')}}">Layout 2</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activities-search-results-3.html')}}">Layout 3</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activities-search-results-4.html')}}">Layout 4</a>
+                                    </li>
+                                    <li><a href="{{asset('bundles/framework/activities-search-results-5.html')}}">Layout 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP AREA -->
+    {% block video  %}
+    <div class="top-area show-onload">
+        <div class="bg-holder full">
+            <div class="bg-mask"></div>
+            <div class="bg-img" style="background-image:url({{asset('bundles/framework/images/2048x1365Gray.png')}});"></div>
+
+            <video class="bg-video hidden-sm hidden-xs" preload="auto" autoplay="true" loop="loop" muted="muted" poster="{{asset('bundles/framework/images/video-bg.jpg')}}">
+                <source src="{{asset('bundles/framework/media/loop.webm')}}" type="video/webm" />
+                <source src="{{asset('bundles/framework/media/loop.mp4')}}" type="video/mp4" />
+            </video>
+
+            <div class="bg-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-7">
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-front full-height">
+                <div class="container rel full-height">
+                    {% block content %} <div class="search-tabs search-tabs-bg search-tabs-bottom">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-building-o"></i> <span >Hotels</span></a>
+                                </li>
+                                <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-plane"></i> <span >Flights</span></a>
+                                </li>
+                                <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-home"></i> <span >Rentals</span></a>
+                                </li>
+                                <li><a href="#tab-4" data-toggle="tab"><i class="fa fa-car"></i> <span >Cars</span></a>
+                                </li>
+                                <li><a href="#tab-5" data-toggle="tab"><i class="fa fa-bolt"></i> <span >Activities</span></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab-1">
+                                    <h2>Search and Save on Hotels</h2>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                    <label>Where are you going?</label>
+                                                    <input class="typeahead form-control" placeholder="City, Airport, Point of Interest or U.S. Zip Code" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="input-daterange" data-date-format="M d, D">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>Check-in</label>
+                                                                <input class="form-control" name="start" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>Check-out</label>
+                                                                <input class="form-control" name="end" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                <label>Rooms</label>
+                                                                <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                    <label class="btn btn-primary active">
+                                                                        <input type="radio" name="options" />1</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />2</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3+</label>
+                                                                </div>
+                                                                <select class="form-control hidden">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected="selected">4</option>
+                                                                    <option>5</option>
+                                                                    <option>6</option>
+                                                                    <option>7</option>
+                                                                    <option>8</option>
+                                                                    <option>9</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                <label>Guests</label>
+                                                                <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                    <label class="btn btn-primary active">
+                                                                        <input type="radio" name="options" />1</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />2</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3+</label>
+                                                                </div>
+                                                                <select class="form-control hidden">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected="selected">4</option>
+                                                                    <option>5</option>
+                                                                    <option>6</option>
+                                                                    <option>7</option>
+                                                                    <option>8</option>
+                                                                    <option>9</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-lg" type="submit" >Search for Hotels</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="tab-2">
+                                    <h2>Search for Cheap Flights</h2>
+                                    <form>
+                                        <div class="tabbable">
+                                            <ul class="nav nav-pills nav-sm nav-no-br mb10" id="flightChooseTab">
+                                                <li class="active"><a href="#flight-search-1" data-toggle="tab">Round Trip</a>
+                                                </li>
+                                                <li><a href="#flight-search-2" data-toggle="tab">One Way</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in active" id="flight-search-1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                                        <label>From</label>
+                                                                        <input class="typeahead form-control" placeholder="City, Airport, U.S. Zip" type="text" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                                        <label>To</label>
+                                                                        <input class="typeahead form-control" placeholder="City, Airport, U.S. Zip" type="text" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-daterange" data-date-format="M d, D">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                            <label>Departing</label>
+                                                                            <input class="form-control" name="start" type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                            <label>Returning</label>
+                                                                            <input class="form-control" name="end" type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group form-group-lg form-group-select-plus">
+                                                                            <label>Passngers</label>
+                                                                            <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                                <label class="btn btn-primary active">
+                                                                                    <input type="radio" name="options" />1</label>
+                                                                                <label class="btn btn-primary">
+                                                                                    <input type="radio" name="options" />2</label>
+                                                                                <label class="btn btn-primary">
+                                                                                    <input type="radio" name="options" />3</label>
+                                                                                <label class="btn btn-primary">
+                                                                                    <input type="radio" name="options" />3+</label>
+                                                                            </div>
+                                                                            <select class="form-control hidden">
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option selected="selected">4</option>
+                                                                                <option>5</option>
+                                                                                <option>6</option>
+                                                                                <option>7</option>
+                                                                                <option>8</option>
+                                                                                <option>9</option>
+                                                                                <option>10</option>
+                                                                                <option>11</option>
+                                                                                <option>12</option>
+                                                                                <option>13</option>
+                                                                                <option>14</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="flight-search-2">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                                        <label>From</label>
+                                                                        <input class="typeahead form-control" placeholder="City, Airport, U.S. Zip" type="text" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                                        <label>To</label>
+                                                                        <input class="typeahead form-control" placeholder="City, Airport, U.S. Zip" type="text" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-daterange" data-date-format="M d, D">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                            <label>Departing</label>
+                                                                            <input class="date-pick form-control" data-date-format="M d, D" type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group form-group-lg form-group-select-plus">
+                                                                            <label>Passngers</label>
+                                                                            <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                                <label class="btn btn-primary active">
+                                                                                    <input type="radio" name="options" />1</label>
+                                                                                <label class="btn btn-primary">
+                                                                                    <input type="radio" name="options" />2</label>
+                                                                                <label class="btn btn-primary">
+                                                                                    <input type="radio" name="options" />3</label>
+                                                                                <label class="btn btn-primary">
+                                                                                    <input type="radio" name="options" />3+</label>
+                                                                            </div>
+                                                                            <select class="form-control hidden">
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option selected="selected">4</option>
+                                                                                <option>5</option>
+                                                                                <option>6</option>
+                                                                                <option>7</option>
+                                                                                <option>8</option>
+                                                                                <option>9</option>
+                                                                                <option>10</option>
+                                                                                <option>11</option>
+                                                                                <option>12</option>
+                                                                                <option>13</option>
+                                                                                <option>14</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-lg" type="submit">Search for Flights</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="tab-3">
+                                    <h2>Find Your Perfect Home</h2>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                    <label>Where are you going?</label>
+                                                    <input class="typeahead form-control" placeholder="City, Airport, Point of Interest or U.S. Zip Code" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="input-daterange" data-date-format="M d, D">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>Check-in</label>
+                                                                <input class="form-control" name="start" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>Check-out</label>
+                                                                <input class="form-control" name="end" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                <label>Rooms</label>
+                                                                <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                    <label class="btn btn-primary active">
+                                                                        <input type="radio" name="options" />1</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />2</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3+</label>
+                                                                </div>
+                                                                <select class="form-control hidden">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected="selected">4</option>
+                                                                    <option>5</option>
+                                                                    <option>6</option>
+                                                                    <option>7</option>
+                                                                    <option>8</option>
+                                                                    <option>9</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                <label>Guests</label>
+                                                                <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                    <label class="btn btn-primary active">
+                                                                        <input type="radio" name="options" />1</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />2</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3</label>
+                                                                    <label class="btn btn-primary">
+                                                                        <input type="radio" name="options" />3+</label>
+                                                                </div>
+                                                                <select class="form-control hidden">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected="selected">4</option>
+                                                                    <option>5</option>
+                                                                    <option>6</option>
+                                                                    <option>7</option>
+                                                                    <option>8</option>
+                                                                    <option>9</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-lg" type="submit">Search for Vacation Rentals</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="tab-4">
+                                    <h2>Search for Cheap Rental Cars</h2>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                            <label>Pick-up Location</label>
+                                                            <input class="typeahead form-control" placeholder="City, Airport, U.S. Zip" type="text" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                            <label>Drop-off Location</label>
+                                                            <input class="typeahead form-control" placeholder="City, Airport, U.S. Zip" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="input-daterange" data-date-format="M d, D">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>Pick-up Date</label>
+                                                                <input class="form-control" name="start" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>Drop-ff Date</label>
+                                                                <input class="form-control" name="end" type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-lg" type="submit">Search for Rental Cars</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="tab-5">
+                                    <h2>Search for Activities</h2>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                    <label>Where are you going?</label>
+                                                    <input class="typeahead form-control" placeholder="City, Airport, Point of Interest or U.S. Zip Code" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="input-daterange" data-date-format="M d, D">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>From</label>
+                                                                <input class="form-control" name="start" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>To</label>
+                                                                <input class="form-control" name="end" type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-lg" type="submit">Search for Activities</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div> {% endblock content %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP AREA  -->
+    {% endblock video %}
+    <div class="gap"></div>
+
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row row-wrap">
+                <div class="col-md-3">
+                    <a class="logo" href="{{asset('bundles/framework/index.html')}}">
+                        <img src="{{asset('bundles/framework/images/logo-invert.png')}}" alt="Image Alternative text" title="Image Title" />
+                    </a>
+                    <p class="mb20">Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!</p>
+                    <ul class="list list-horizontal list-space">
+                        <li>
+                            <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-twitter box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-google-plus box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-linkedin box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>Newsletter</h4>
+                    <form>
+                        <label>Enter your E-mail Address</label>
+                        <input type="text" class="form-control">
+                        <p class="mt5"><small>*We Never Send Spam</small>
+                        </p>
+                        <input type="submit" class="btn btn-primary" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list list-footer">
+                        <li><a href="#">About US</a>
+                        </li>
+                        <li><a href="#">Press Centre</a>
+                        </li>
+                        <li><a href="#">Best Price Guarantee</a>
+                        </li>
+                        <li><a href="#">Travel News</a>
+                        </li>
+                        <li><a href="#">Jobs</a>
+                        </li>
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                        <li><a href="#">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Have Questions?</h4>
+                    <h4 class="text-color">+1-202-555-0173</h4>
+                    <h4><a href="#" class="text-color">support@traveler.com</a></h4>
+                    <p>24/7 Dedicated Customer Support</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{asset('bundles/framework/js/jquery.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/bootstrap.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/slimmenu.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/bootstrap-datepicker.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/bootstrap-timepicker.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/nicescroll.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/dropit.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/ionrangeslider.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/icheck.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/jquery.js')}}js/fotorama.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="{{asset('bundles/framework/js/typeahead.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/card-payment.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/magnific.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/owl-carousel.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/fitvids.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/tweet.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/countdown.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/gridrotator.js')}}"></script>
+    <script src="{{asset('bundles/framework/js/custom.js')}}"></script>
+</div>
+</body>
+
+</html>
+
+

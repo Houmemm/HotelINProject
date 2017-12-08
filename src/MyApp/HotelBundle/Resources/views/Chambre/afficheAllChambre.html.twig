@@ -1,0 +1,40 @@
+{% extends "@MyAppUser/layout.html.twig" %}
+{% block video  %}
+{% block content %}
+<h1> la liste de tous les chambres </h1>
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th> hotel </th>
+        <th>nbre de place</th>
+        <th>prix </th>
+        <th>dispoibilite </th>
+        <th>supprimer</th>
+        <th>Modifier</th>
+
+    </tr>
+    {% for m in ms %}
+        <tr>
+            <td> {{ m.idChambre }}</td>
+            <td> {{ m.idHotel }}</td>
+            <td> {{ m.nbrePlace }}</td>
+            <td> {{ m.prix }}</td>
+            <td> {{ m.disponible }}</td>
+            <td>
+                <a href="{{ path('Delete_Chambre',{'id': m.idChambre })}}" onclick="return confirm('Etes vous sur de vouloir supprimer cette chambre  ?')">
+                    supprimer
+                </a>
+
+
+            </td>
+            <td>
+                <a href="{{ path('update_chambre',{'id':  m.idChambre})}}">
+                    modifier
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock content %}
+
+{% endblock video %}
